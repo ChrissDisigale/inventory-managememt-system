@@ -45,7 +45,7 @@
             <td><input type="text" readonly="" style="width: 15px;" :value="cart.pro_quantity">
        <button @click.prevent="increment(cart.id)" class="btn btn-sm btn-success">+</button>
    <button  @click.prevent="decrement(cart.id)" class="btn btn-sm btn-danger" v-if="cart.pro_quantity >= 2">-</button>
-   <button class="btn btn-sm btn-danger" v-else="" disabled="">-</button>
+   <button class="btn btn-sm btn-danger" disabled="">-</button>
 
             </td>
             <td>{{ cart.product_price  }}</td>
@@ -151,7 +151,7 @@
               <div class="card-body">
                 <h6 class="card-title">{{ product.product_name }}</h6>
        <span class="badge badge-success" v-if="product.product_quantity  >= 1 ">Available {{ product.product_quantity }}  </span> 
-    <span class="badge badge-danger" v-else=" ">Stock Out </span> 
+    <span class="badge badge-danger" >Stock Out </span> 
                 
               </div>
             </div></button>
@@ -181,7 +181,7 @@
               <div class="card-body">
                 <h6 class="card-title">{{ getproduct.product_name }}</h6>
        <span class="badge badge-success" v-if="getproduct.product_quantity  >= 1 ">Available {{ getproduct.product_quantity }}  </span> 
-    <span class="badge badge-danger" v-else=" ">Stock Out </span> 
+    <span class="badge badge-danger">Stock Out </span> 
                 
               </div>
             </div></button>
@@ -215,7 +215,8 @@
            
 
         </div> 
-  </div>
+  
+  
 
 
 </template>

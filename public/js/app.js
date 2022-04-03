@@ -5030,6 +5030,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = (_created$created$data = {
   created: function created() {
     if (!User.loggedIn()) {
@@ -55319,14 +55320,16 @@ var render = function () {
                                     },
                                     [_vm._v("-")]
                                   )
-                                : _c(
-                                    "button",
-                                    {
-                                      staticClass: "btn btn-sm btn-danger",
-                                      attrs: { disabled: "" },
-                                    },
-                                    [_vm._v("-")]
-                                  ),
+                                : _vm._e(),
+                              _vm._v(" "),
+                              _c(
+                                "button",
+                                {
+                                  staticClass: "btn btn-sm btn-danger",
+                                  attrs: { disabled: "" },
+                                },
+                                [_vm._v("-")]
+                              ),
                             ]),
                             _vm._v(" "),
                             _c("td", [_vm._v(_vm._s(cart.product_price))]),
@@ -55739,14 +55742,16 @@ var render = function () {
                                                     ),
                                                   ]
                                                 )
-                                              : _c(
-                                                  "span",
-                                                  {
-                                                    staticClass:
-                                                      "badge badge-danger",
-                                                  },
-                                                  [_vm._v("Stock Out ")]
-                                                ),
+                                              : _vm._e(),
+                                            _vm._v(" "),
+                                            _c(
+                                              "span",
+                                              {
+                                                staticClass:
+                                                  "badge badge-danger",
+                                              },
+                                              [_vm._v("Stock Out ")]
+                                            ),
                                           ]
                                         ),
                                       ]
@@ -55865,14 +55870,13 @@ var render = function () {
                                                 ),
                                               ]
                                             )
-                                          : _c(
-                                              "span",
-                                              {
-                                                staticClass:
-                                                  "badge badge-danger",
-                                              },
-                                              [_vm._v("Stock Out ")]
-                                            ),
+                                          : _vm._e(),
+                                        _vm._v(" "),
+                                        _c(
+                                          "span",
+                                          { staticClass: "badge badge-danger" },
+                                          [_vm._v("Stock Out ")]
+                                        ),
                                       ]),
                                     ]
                                   ),
